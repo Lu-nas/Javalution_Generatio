@@ -1,20 +1,23 @@
 package conta.model;
 
-public class conta {
+public abstract class conta {
 
-	// modificador de acesso priv
+	// modificador de acesso privado
 	private int numero;
 	private int agencia;
 	private int tipo;
 	private String titular;
 	private float saldo;
-
+// metodo construtor da conta
 	public conta(int numero, int agencia, int tipo, String titular,float saldo ) {
 		this.numero = numero;
 		this.agencia = agencia;
 		this.tipo = tipo;
 		this.titular = titular;
 		this.saldo = saldo;
+	}
+	public conta() { 
+		
 	}
 
 	public int getNumero() {

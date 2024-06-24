@@ -26,6 +26,7 @@ public class contaCorrente extends conta {
 		}
 
 		this.setSaldo(this.getSaldo() - valor);
+		System.out.println("Saque realizado com sucesso!!");
 		return true;
 
 	}
